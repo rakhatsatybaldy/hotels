@@ -1,0 +1,17 @@
+<div class="col s3">
+  <div class="card" appHover>
+    <div class="card-image">
+      <img src="{{ hotel.image }}">
+    </div>
+    <div class="card-content">
+      <p [ngClass]="{'marked': isMarked}"><b>{{ hotel.name | uppercase}}</b></p>
+      <span class="card-title">{{ hotel.stars }} stars</span>
+    </div>
+    <div class="card-content">
+      <p>{{ hotel.description }}</p>
+    </div>
+    <div class="card-action">
+      <a class="waves-effect waves-light btn" (click)="onClick()">Click</a>
+    </div>
+  </div>
+</div>
