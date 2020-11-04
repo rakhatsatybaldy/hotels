@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {UsersService} from './users.service';
+import {NewServiceService} from './new-service.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,7 @@ import {UsersService} from './users.service';
   providers: [UsersService]
 })
 export class AppComponent {
-
+  constructor(svc : NewServiceService) {
+    svc.consoleText("Hello World! This is my first service");
+  }
 }

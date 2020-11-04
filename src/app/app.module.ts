@@ -14,6 +14,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import {RouterModule} from '@angular/router';
 import { CheckHookComponent } from './check-hook/check-hook.component';
 import { HookSecondComponent } from './hook-second/hook-second.component';
+import {NewServiceService} from './new-service.service';
 
 const routes = [
   {path: '' , component: HomePageComponent},
@@ -40,7 +41,7 @@ const routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [NewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
