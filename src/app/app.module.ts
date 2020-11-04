@@ -16,7 +16,7 @@ import { CheckHookComponent } from './check-hook/check-hook.component';
 import { HookSecondComponent } from './hook-second/hook-second.component';
 import {NewServiceService} from './new-service.service';
 
-const routes = [
+const rowtes = [
   {path: '' , component: HomePageComponent},
   {path: 'setup' , component: SetupPageComponent},
   {path: 'about' , component: AboutPageComponent}
@@ -39,7 +39,7 @@ const routes = [
     AppRoutingModule,
     HttpClientJsonpModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(rowtes)
   ],
   providers: [NewServiceService],
   bootstrap: [AppComponent]
