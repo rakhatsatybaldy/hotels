@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UsersService} from './users.service';
 import {NewServiceService} from './new-service.service';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,6 @@ import {NewServiceService} from './new-service.service';
   styleUrls: ['./app.component.scss'],
   providers: [UsersService]
 })
-export class AppComponent {
-  constructor(svc : NewServiceService) {
-    svc.consoleText("Hello World! This is my first service");
-  }
+export class AppComponent{
+
 }
